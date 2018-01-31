@@ -7,8 +7,10 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.zsh-custom:
     ~/.zshrc:
-
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - ['git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -rf fonts', Installing powerline fonts]
+  - ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
