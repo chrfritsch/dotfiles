@@ -81,6 +81,10 @@
 	st = status
 	co = checkout
 
+    # Download and apply a patch.
+    a = apply --index
+    acp = "!f() { curl $@ | git a; }; f"
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
