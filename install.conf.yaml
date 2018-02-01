@@ -7,6 +7,10 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.gitconfig:
+    ~/.gitattributes:
+    ~/.gitignore:
+    ~/.inputrc:
     ~/.zsh-custom:
     ~/.zshrc:
 
