@@ -36,7 +36,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -95,3 +95,6 @@ export LANG=de_DE.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 zstyle ':completion:*' special-dirs true
+
+# Set php version for acquia devdesktop
+export PHP_ID=php7_1
