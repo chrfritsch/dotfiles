@@ -6,12 +6,13 @@ alias dde="drush sql-dump"
 
 # Drupal core
 alias drupalcs="phpcs --standard=Drupal --extensions='php,module,inc,install,test,profile,theme' -p"
-alias drupalcsp="phpcs --standard=DrupalPractice --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md"
+alias drupalcsp="phpcs --standard=DrupalPractice --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md'"
 alias drupal-phantomjs="phantomjs --ssl-protocol=any --ignore-ssl-errors=true vendor/jcalderonzumba/gastonjs/src/Client/main.js 8510 1024 768"
-alias install-drupal="drush si standard --account-pass=admin --site-name=Drupal --uri=http://drupal.dd:8083 -y && drush uli --uri=http://drupal.dd:8083"
+alias install-drupal="drush si demo_umami --account-pass=admin --site-name=Drupal --uri=http://drupal.dd:8083 -y && drush uli --uri=http://drupal.dd:8083"
 
 # Thunder
-alias install-thunder="drush si thunder --account-pass=admin --site-name=Thunder --uri=http://thunder.dd:8083 -y && drush uli --uri=http://thunder.dd:8083"
+alias install-thunder="drush si thunder --account-pass=admin --site-name=Thunder --uri=http://thunder.dd:8083 -y && drush en simpletest --uri=http://thunder.dd:8083 -y && drush uli --uri=http://thunder.dd:8083"
+alias trigger-update-path="git commit --allow-empty -m '[TEST_UPDATE=true] Trigger update test path'"
 
 # Git
 alias gap="git apply --index"
