@@ -61,6 +61,7 @@ ZSH_CUSTOM=~/.zsh-custom
 plugins=(
   git
   composer
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
