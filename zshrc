@@ -98,4 +98,8 @@ export LANG=de_DE.UTF-8
 zstyle ':completion:*' special-dirs true
 
 # Set php version for acquia devdesktop
-export PHP_ID=php7_1
+export PHP_ID=php7_2
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/opt/qt/bin:$PATH"
