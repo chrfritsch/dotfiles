@@ -7,6 +7,7 @@ brew "bash-completion"
 brew "curl"
 brew "patchutils"
 brew "wget"
+brew "pkg-config"
 
 brew "git"
 brew "git-lfs"
@@ -24,3 +25,5 @@ brew "nginx", restart_service: true
 
 brew "blackfireio/blackfire/blackfire-agent"
 brew "blackfireio/blackfire/blackfire-php72"
+
+brew "imagemagick"

@@ -10,11 +10,11 @@ alias drush-dev-init="drush en simpletest -y && drush cset system.logging error_
 alias drupalcs="phpcs --standard=Drupal --extensions='php,module,inc,install,test,profile,theme' -p"
 alias drupalcsp="phpcs --standard=DrupalPractice --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md'"
 alias drupal-phantomjs="phantomjs --ssl-protocol=any --ignore-ssl-errors=true vendor/jcalderonzumba/gastonjs/src/Client/main.js 8510 1024 768"
-alias install-umami="drush si demo_umami --account-pass=admin --site-name=Drupal -y && drush-dev-init && drush cr --uri=https://drupal.test && drush uli --uri=http://drupal.test"
-alias install-drupal="drush si standard --account-pass=admin --site-name=Drupal -y && drush-dev-init && drush cr --uri=https://drupal.test && drush uli --uri=http://drupal.test"
+alias install-umami="drush si demo_umami --account-pass=admin --site-name=Drupal -y && drush-dev-init && drush cr --uri=https://drupal.test && drush uli --uri=https://drupal.test"
+alias install-drupal="drush si standard --account-pass=admin --site-name=Drupal -y && drush-dev-init && drush cr --uri=https://drupal.test && drush uli --uri=https://drupal.test"
 
 # Thunder
-alias install-thunder="drush si thunder --account-pass=admin --site-name=Thunder -y && drush-dev-init && drush cr --uri=https://thunder.test && drush uli --uri=http://thunder.test"
+alias install-thunder="drush si thunder --account-pass=admin --site-name=Thunder -y && drush-dev-init && drush cr --uri=https://thunder.test && drush uli --uri=https://thunder.test"
 alias trigger-update-path="git commit --allow-empty -m '[TEST_UPDATE=true] Trigger update test path'"
 
 # Git
