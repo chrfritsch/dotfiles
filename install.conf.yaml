@@ -13,7 +13,6 @@
     ~/.inputrc:
     ~/.zsh-custom:
     ~/.zshrc:
-    ~/.Brewfile:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
@@ -21,4 +20,7 @@
   - ['/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"', Installing homebrew]
   - ['git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -rf fonts', Installing powerline fonts]
   - ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
-  - [composer global require laravel/valet, Installing valet]
+  - [brew update, Update homebrew]
+  - [brew bundle, Installing brew bundles]
+  - [composer global require laravel/valet && valet install, Installing valet]
+  - ['curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar && chmod +x drush.phar && sudo mv drush.phar /usr/local/bin/drush', Installing drush-launcher]
