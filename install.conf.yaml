@@ -28,3 +28,4 @@
   - [phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer, Setting coding standard]
   - [pecl install xdebug, Installing xdebug for php]
   - [pecl install imagick, Installing imagick for php]
+  - ['curl https://drupalconsole.com/installer -L -o drupal.phar && mv drupal.phar /usr/local/bin/drupal && chmod +x /usr/local/bin/drupal', Install drupal console launcher]
