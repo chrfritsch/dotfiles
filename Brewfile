@@ -8,6 +8,8 @@ brew "curl"
 brew "patchutils"
 brew "wget"
 brew "pkg-config"
+brew "jq"
+brew "shellcheck"
 
 brew "git"
 brew "git-lfs"

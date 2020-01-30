@@ -2,7 +2,7 @@ alias d="drush"
 alias de="drush en"
 alias dpmu="drush pmu"
 alias ddi="drush sql-drop -y && drush sql-cli"
-alias dde="drush sql-dump"
+alias dde="drush sql-dump --structure-tables-list='cache,_cache*'"
 
 alias drush-dev-init="drush en simpletest -y && drush cset system.logging error_level all -y && drush cset system.performance js.preprocess 0 -y && drush cset system.performance css.preprocess 0 -y && drush pmu update automated_cron -y && drush cset system.date country.default DE -y && drush cset system.date timezone.default Europe/Berlin -y && drush cset system.date first_day 1 -y && drush cset system.date timezone.user.configurable 0 -y"
 
