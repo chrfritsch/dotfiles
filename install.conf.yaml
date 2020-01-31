@@ -1,3 +1,4 @@
+# yamllint disable rule:line-length
 - defaults:
     link:
       create: true
@@ -16,18 +17,24 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - ['/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"', Installing homebrew]
+  - ['if ! type "brew" > /dev/null; then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; fi', Installing homebrew]
   - ['git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -rf fonts', Installing powerline fonts]
-  - ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"', Installing oh-my-zsh]
+  - ['if ! type "zsh" > /dev/null; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi', Installing oh-my-zsh]
+  - ['if ! type "nvm" > /dev/null; then curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash; fi', Installing nvm]
   - [brew update, Update homebrew]
   - [brew bundle, Installing brew bundles]
+
+  - [. ~/.nvm/nvm.sh && nvm install --lts, Install LTS node]
+  - [npm install -g gatsby-cli eslint yarn, Install npm packages]
+
   - [./install-composer.sh, Installing composer]
   - [composer global require laravel/valet drupal/coder phploc/phploc phpmd/phpmd, Installing global composer packages]
-  - [valet install, Installing valet]
-  - ['curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar && chmod +x drush.phar && sudo mv drush.phar /usr/local/bin/drush', Installing drush-launcher]
   - [phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer, Setting coding standard]
-  - [pecl install xdebug, Installing xdebug for php]
-  - [pecl install imagick, Installing imagick for php]
+  - [valet install, Installing valet]
+  - [if ! pecl list | grep xdebug > /dev/null; then pecl install xdebug; fi, Installing xdebug for php]
+  - [if ! pecl list | grep imagick > /dev/null; then pecl install imagick; fi, Installing imagick for php]
+
   - ['curl https://drupalconsole.com/installer -L -o drupal.phar && mv drupal.phar /usr/local/bin/drupal && chmod +x /usr/local/bin/drupal', Install drupal console launcher]
+  - ['curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar && chmod +x drush.phar && sudo mv drush.phar /usr/local/bin/drush', Installing drush-launcher]
   - ['curl -O -L https://github.com/mglaman/drupal-check/releases/latest/download/drupal-check.phar && mv drupal-check.phar /usr/local/bin/drupal-check && chmod +x /usr/local/bin/drupal-check', Install drupal-check]
   - ['curl -O -L https://github.com/mglaman/drupalorg-cli/releases/latest/download/drupalorg.phar && mv drupalorg.phar /usr/local/bin/drupalorg && chmod +x /usr/local/bin/drupalorg', Install drupalorg-cli]

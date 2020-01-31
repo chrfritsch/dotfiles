@@ -10,12 +10,10 @@ brew "wget"
 brew "pkg-config"
 brew "jq"
 brew "shellcheck"
+brew "yamllint"
 
 brew "git"
 brew "git-lfs"
-
-brew "node", args: ["without-icu4c"]
-brew "yarn"
 
 brew "python"
 

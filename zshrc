@@ -66,6 +66,7 @@ plugins=(
   git-prompt
   wd
   yarn
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
