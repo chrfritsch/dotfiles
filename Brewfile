@@ -10,6 +10,7 @@ brew "wget"
 brew "pkg-config"
 brew "jq"
 brew "shellcheck"
+brew "yamllint"
 
 brew "git"
 brew "git-lfs"

@@ -24,7 +24,7 @@
   - [brew update, Update homebrew]
   - [brew bundle, Installing brew bundles]
 
-  - [nvm install --lts, Install LTS node]
+  - [. ~/.nvm/nvm.sh && nvm install --lts, Install LTS node]
   - [npm install -g gatsby-cli eslint yarn, Install npm packages]
 
   - [./install-composer.sh, Installing composer]
