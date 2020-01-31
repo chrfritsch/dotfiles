@@ -14,9 +14,6 @@ brew "shellcheck"
 brew "git"
 brew "git-lfs"
 
-brew "node", args: ["without-icu4c"]
-brew "yarn"
-
 brew "python"
 
 brew "php", restart_service: true, link: false

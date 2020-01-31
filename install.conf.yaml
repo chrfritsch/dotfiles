@@ -19,11 +19,12 @@
   - [git submodule update --init --recursive, Installing submodules]
   - ['if ! type "brew" > /dev/null; then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; fi', Installing homebrew]
   - ['git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -rf fonts', Installing powerline fonts]
-  - ['if ! type "zsh" > /dev/null; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; else upgrade_oh_my_zsh; fi', Installing oh-my-zsh]
+  - ['if ! type "zsh" > /dev/null; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi', Installing oh-my-zsh]
+  - ['if ! type "nvm" > /dev/null; then curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash; fi', Installing nvm]
   - [brew update, Update homebrew]
   - [brew bundle, Installing brew bundles]
 
-  - [npm install -g gatsby-cli eslint, Install npm packages]
+  - [npm install -g gatsby-cli eslint yarn, Install npm packages]
 
   - [./install-composer.sh, Installing composer]
   - [composer global require laravel/valet drupal/coder phploc/phploc phpmd/phpmd, Installing global composer packages]
