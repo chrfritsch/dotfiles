@@ -1,0 +1,11 @@
+name: Test
+
+on: [pull_request]
+
+jobs:
+  misspell:
+    name: runner / test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ./install.sh
