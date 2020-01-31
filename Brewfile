@@ -17,11 +17,11 @@ brew "git-lfs"
 
 brew "python"
 
-brew "php", restart_service: true, link: false
-brew "php@7.2", restart_service: true, link: true
-brew "dnsmasq", restart_service: true
-brew "mysql", restart_service: true
-brew "nginx", restart_service: true
+brew "php", restart_service: changed, link: false
+brew "php@7.2", restart_service: changed, link: true
+brew "dnsmasq", restart_service: changed
+brew "mysql", restart_service: changed
+brew "nginx", restart_service: changed
 
 brew "blackfireio/blackfire/blackfire-agent"
 brew "blackfireio/blackfire/blackfire-php72"
