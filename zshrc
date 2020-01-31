@@ -62,6 +62,10 @@ plugins=(
   git
   composer
   docker
+  gatsby
+  git-prompt
+  wd
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
