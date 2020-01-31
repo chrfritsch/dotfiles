@@ -1,5 +1,5 @@
-#!/bin/zsh
+#!/bin/sh
 
 set -e
 
-cat $1 | commitlint
+commitlint -e
