@@ -14,6 +14,10 @@
     ~/.inputrc:
     ~/.zsh-custom:
     ~/.zshrc:
+    ~/commitlint.config.js:
+    ~/.git/hooks/commit-msg:
+      create: true
+      path: git/hooks/commit-msg
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
@@ -25,7 +29,7 @@
   - [brew bundle, Installing brew bundles]
 
   - [. ~/.nvm/nvm.sh && nvm install --lts, Install LTS node]
-  - [npm install -g gatsby-cli eslint yarn, Install npm packages]
+  - [npm install -g gatsby-cli eslint yarn @commitlint/cli @commitlint/config-conventional, Install npm packages]
 
   - [./install-composer.sh, Installing composer]
   - [composer global require laravel/valet drupal/coder phploc/phploc phpmd/phpmd, Installing global composer packages]
