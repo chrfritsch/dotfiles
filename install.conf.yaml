@@ -42,3 +42,5 @@
   - ['curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar && chmod +x drush.phar && sudo mv drush.phar /usr/local/bin/drush', Installing drush-launcher]
   - ['curl -O -L https://github.com/mglaman/drupal-check/releases/latest/download/drupal-check.phar && mv drupal-check.phar /usr/local/bin/drupal-check && chmod +x /usr/local/bin/drupal-check', Install drupal-check]
   - ['curl -O -L https://github.com/mglaman/drupalorg-cli/releases/latest/download/drupalorg.phar && mv drupalorg.phar /usr/local/bin/drupalorg && chmod +x /usr/local/bin/drupalorg', Install drupalorg-cli]
+
+  - ['curl -L -o ./install-misspell.sh https://git.io/misspell && sh ./install-misspell.sh -b /usr/local/bin && rm -rf install-misspell.sh', Install misspell]
