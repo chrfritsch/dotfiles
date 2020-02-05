@@ -2,4 +2,4 @@
 
 set -e
 
-commitlint -e
+misspell -error $1 && commitlint -e
