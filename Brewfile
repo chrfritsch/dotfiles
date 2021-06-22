@@ -18,8 +18,8 @@ brew "git-lfs"
 
 brew "python"
 
+brew "php@8.0", restart_service: :changed, link: false
 brew "php@7.4", restart_service: :changed, link: true
-brew "php@7.3", restart_service: :changed, link: false
 brew "dnsmasq", restart_service: :changed
 brew "mysql", restart_service: :changed
 brew "nginx", restart_service: :changed
