@@ -58,6 +58,7 @@
     ~/.zsh-custom:
     ~/.zshrc:
     ~/.warprc:
+    ~/.warp:
 
 - shell:
     - [ 'if ! type "zsh" > /dev/null; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi', Installing oh-my-zsh ]
@@ -67,9 +68,6 @@
 
     - [ ./install-composer.sh, Installing composer ]
     - [ composer global require laravel/valet drupal/coder phploc/phploc phpmd/phpmd, Installing global composer packages ]
-    - [ valet install, Installing valet ]
-    - [ if ! pecl list | grep xdebug > /dev/null; then pecl install xdebug; fi, Installing xdebug for php ]
-    - [ if ! pecl list | grep imagick > /dev/null; then pecl install imagick; fi, Installing imagick for php ]
 
     - [ 'curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar && chmod +x drush.phar && sudo mv drush.phar /usr/local/bin/drush', Installing drush-launcher ]
     - [ 'curl -O -L https://github.com/mglaman/drupal-check/releases/latest/download/drupal-check.phar && mv drupal-check.phar /usr/local/bin/drupal-check && chmod +x /usr/local/bin/drupal-check', Install drupal-check ]
