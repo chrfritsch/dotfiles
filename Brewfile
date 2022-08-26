@@ -12,6 +12,7 @@ brew "jq"
 brew "shellcheck"
 brew "yamllint"
 brew "shfmt"
+brew "chromedriver"
 
 brew "git"
 brew "git-lfs"

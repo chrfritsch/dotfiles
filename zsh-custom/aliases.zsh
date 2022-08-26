@@ -14,7 +14,7 @@ alias install-umami="drush si demo_umami --account-pass=admin --site-name=Drupal
 alias install-drupal="drush si standard --account-pass=admin --site-name=Drupal -y && drush-dev-init && drush cr --uri=http://drupal.local && drush uli --uri=http://drupal.local"
 
 # Thunder
-alias install-thunder="drush si thunder --account-pass=admin --site-name=Thunder -y && drush-dev-init && drush cr --uri=http://thunder3.local && drush uli --uri=http://thunder3.local"
+alias install-thunder="drush si thunder --account-pass=admin --site-name=Thunder -y && drush-dev-init && drush cr --uri=http://thunder.local && drush uli --uri=http://thunder.local"
 alias trigger-update-path="git commit --allow-empty -m '[TEST_UPDATE=true] Trigger update test path'"
 
 # Git
@@ -25,3 +25,6 @@ alias gbr='git branch | grep -v "^*" | xargs git branch -D'
 
 # System
 alias rd="rm -rf"
+
+# Overwrite
+alias ll="exa -lh --git --all"
