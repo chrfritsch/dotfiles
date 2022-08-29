@@ -42,6 +42,7 @@
     - dive
     - gawk
     - mdless
+    - bash
 
 - npm:
       - eslint
