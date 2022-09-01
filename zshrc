@@ -71,7 +71,7 @@ plugins=(
   git
   composer
   docker
-# dotenv
+  dotenv
   wd
 )
 
