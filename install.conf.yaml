@@ -43,6 +43,7 @@
     - gawk
     - mdless
     - bash
+    - gpatch
 
 - npm:
       - eslint
